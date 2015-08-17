@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ANShareViewController" customModule="Antsquare" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="qMS-XU-6xl" id="J2K-zb-gAE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qMS-XU-6xl" customClass="ANShareView" customModule="Antsquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-eQ-E6y">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MFp-N9-Pbd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-XZ-u8u">
+                    <rect key="frame" x="16" y="15" width="288" height="310"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZY-dU-6BZ">
+                            <rect key="frame" x="0.0" y="16" width="288" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="RpX-DJ-TqX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYb-o0-h34" userLabel="Separator Line">
+                            <rect key="frame" x="0.0" y="53" width="288" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="liI-8B-5MV"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln0-bI-jA3">
+                            <rect key="frame" x="0.0" y="86" width="288" height="40"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AqV-Ia-Su1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="Facebook" image="Facebook-white">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onFacebookButtonTapped:" destination="-1" eventType="touchUpInside" id="ZEW-M1-1nR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-ma-2ga">
+                            <rect key="frame" x="0.0" y="142" width="288" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="pbL-o0-so2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="Email">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onEmailButtonTapped:" destination="-1" eventType="touchUpInside" id="vfV-oI-15c"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3I-eI-2mt">
+                            <rect key="frame" x="0.0" y="198" width="288" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="R11-RY-WAF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="Sms">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onSmsButtonTapped:" destination="-1" eventType="touchUpInside" id="P29-cn-JRA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m44-7w-Lw1">
+                            <rect key="frame" x="0.0" y="254" width="288" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="qo2-vZ-zWH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="Copy Link">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onCopyLinkButtonTapped:" destination="-1" eventType="touchUpInside" id="YpC-As-zK7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9ZY-dU-6BZ" secondAttribute="trailing" id="39e-u9-cch"/>
+                        <constraint firstAttribute="trailing" secondItem="j3I-eI-2mt" secondAttribute="trailing" id="FbV-O4-vj2"/>
+                        <constraint firstItem="9ZY-dU-6BZ" firstAttribute="leading" secondItem="zKe-XZ-u8u" secondAttribute="leading" id="IiI-Sk-NO7"/>
+                        <constraint firstItem="yYb-o0-h34" firstAttribute="leading" secondItem="zKe-XZ-u8u" secondAttribute="leading" id="LaY-qI-eIo"/>
+                        <constraint firstItem="yYb-o0-h34" firstAttribute="top" secondItem="9ZY-dU-6BZ" secondAttribute="bottom" constant="16" id="NAh-nc-5E3"/>
+                        <constraint firstItem="Ln0-bI-jA3" firstAttribute="top" secondItem="yYb-o0-h34" secondAttribute="bottom" constant="32" id="OSp-uc-bYk"/>
+                        <constraint firstItem="m44-7w-Lw1" firstAttribute="top" secondItem="j3I-eI-2mt" secondAttribute="bottom" constant="16" id="OYD-Kk-gQB"/>
+                        <constraint firstAttribute="trailing" secondItem="m44-7w-Lw1" secondAttribute="trailing" id="Ocm-d3-Cwh"/>
+                        <constraint firstAttribute="height" constant="300" id="TmJ-h7-icM"/>
+                        <constraint firstAttribute="trailing" secondItem="Ln0-bI-jA3" secondAttribute="trailing" id="ULN-4W-C5Q"/>
+                        <constraint firstAttribute="bottom" secondItem="m44-7w-Lw1" secondAttribute="bottom" constant="16" id="Ve9-jq-uJr"/>
+                        <constraint firstAttribute="trailing" secondItem="yYb-o0-h34" secondAttribute="trailing" id="aXt-AC-9W9"/>
+                        <constraint firstItem="Afb-ma-2ga" firstAttribute="top" secondItem="Ln0-bI-jA3" secondAttribute="bottom" constant="16" id="bSs-kx-qZa"/>
+                        <constraint firstItem="9ZY-dU-6BZ" firstAttribute="top" secondItem="zKe-XZ-u8u" secondAttribute="top" constant="16" id="p5j-2l-bo8"/>
+                        <constraint firstItem="m44-7w-Lw1" firstAttribute="leading" secondItem="zKe-XZ-u8u" secondAttribute="leading" id="pXg-LS-ejd"/>
+                        <constraint firstItem="Afb-ma-2ga" firstAttribute="leading" secondItem="zKe-XZ-u8u" secondAttribute="leading" id="qZ3-5g-odB"/>
+                        <constraint firstItem="Ln0-bI-jA3" firstAttribute="leading" secondItem="zKe-XZ-u8u" secondAttribute="leading" id="sIl-gM-aps"/>
+                        <constraint firstAttribute="trailing" secondItem="Afb-ma-2ga" secondAttribute="trailing" id="tWw-D3-DtT"/>
+                        <constraint firstItem="j3I-eI-2mt" firstAttribute="leading" secondItem="zKe-XZ-u8u" secondAttribute="leading" id="tka-gu-pJj"/>
+                        <constraint firstItem="j3I-eI-2mt" firstAttribute="top" secondItem="Afb-ma-2ga" secondAttribute="bottom" constant="16" id="vku-Uj-PjQ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TmJ-h7-icM"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-tB-L1D">
+                    <rect key="frame" x="138" y="372" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="2Ac-WA-SSZ"/>
+                        <constraint firstAttribute="height" constant="44" id="PV6-0i-f6V"/>
+                    </constraints>
+                    <state key="normal" image="xbutton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseButtonTapped:" destination="-1" eventType="touchUpInside" id="M6Q-9c-zx9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bG1-eQ-E6y" firstAttribute="leading" secondItem="qMS-XU-6xl" secondAttribute="leading" id="8mW-6D-Wa1"/>
+                <constraint firstAttribute="centerX" secondItem="sK3-tB-L1D" secondAttribute="centerX" id="Ih8-Mm-Sio"/>
+                <constraint firstAttribute="centerY" secondItem="zKe-XZ-u8u" secondAttribute="centerY" constant="70" id="RIm-zG-BGU"/>
+                <constraint firstAttribute="bottom" secondItem="sK3-tB-L1D" secondAttribute="bottom" constant="64" id="TzA-Ay-Yf2"/>
+                <constraint firstItem="bG1-eQ-E6y" firstAttribute="top" secondItem="qMS-XU-6xl" secondAttribute="top" id="aPn-RO-DjY"/>
+                <constraint firstAttribute="trailing" secondItem="bG1-eQ-E6y" secondAttribute="trailing" id="k8c-ha-OVR"/>
+                <constraint firstItem="zKe-XZ-u8u" firstAttribute="leading" secondItem="qMS-XU-6xl" secondAttribute="leading" constant="16" id="sB1-rQ-J2r"/>
+                <constraint firstAttribute="trailing" secondItem="zKe-XZ-u8u" secondAttribute="trailing" constant="16" id="tZr-Od-J1P"/>
+                <constraint firstAttribute="bottom" secondItem="bG1-eQ-E6y" secondAttribute="bottom" id="v97-Ue-2Rk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="copyLinkButton" destination="m44-7w-Lw1" id="eY5-LP-RHa"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Facebook-white" width="30" height="30"/>
+        <image name="xbutton" width="17" height="17"/>
+    </resources>
+</document>

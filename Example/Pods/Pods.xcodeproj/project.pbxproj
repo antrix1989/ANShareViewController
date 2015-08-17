@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		01DC9A4B83BC06F7561CF8E969C4F99A /* Pods-ANShareViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52CB9D328821E909C68F63769D3DA2 /* Pods-ANShareViewController_Tests-dummy.m */; };
 		224DFCD8A3CAAB6054EC2AD2E46096D6 /* ANShareViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD0CD27CE6716F5061E3F4B94D4EE0AC /* ANShareViewController.bundle */; };
+		2380F2781B8179AD00B4CE01 /* ANShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380F2741B8179AD00B4CE01 /* ANShareViewController.swift */; };
+		2380F2791B8179AD00B4CE01 /* ANShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2380F2751B8179AD00B4CE01 /* ANShareViewController.xib */; };
+		2380F27A1B8179AD00B4CE01 /* ANShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380F2761B8179AD00B4CE01 /* ANShareViewModel.swift */; };
+		2380F27B1B8179AD00B4CE01 /* ANShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380F2771B8179AD00B4CE01 /* ANShareView.swift */; };
 		2EE119595EC38F28C01BBFF46424AA4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2560D9E9E6231C39ECA401E22A48FA3E /* Foundation.framework */; };
 		36E3EC4AF6B7D1D8A7960878DF4E549D /* Pods-ANShareViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952D371D3B751CF3966E1E44D36AB2EF /* Pods-ANShareViewController_Example-dummy.m */; };
 		5F59C91493864B4C4B4C4BF0C7F8089C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2560D9E9E6231C39ECA401E22A48FA3E /* Foundation.framework */; };
 		78F833131C21DAE58704EAFAC786BF63 /* Pods-ANShareViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D509A54577EB3944CCD60F440229AB51 /* Pods-ANShareViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8670B71E194CE23F0AF22EF4767BF9ED /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D52500D0EDF42DBCD620E49830E990 /* ReplaceMe.swift */; };
 		995CB1A95B33BB3054A639D76056DB76 /* ANShareViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9950476351B6D3FB25C2D0ADCC970A59 /* ANShareViewController-dummy.m */; };
 		A69D10F1119BF0B20AD0C3FC1951E693 /* ANShareViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1FCC333A63FC1269F87CD9E392C436D /* ANShareViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB96E5F4BDD144C18EED5615380C7D35 /* Pods-ANShareViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D04DA4C226444DB48EF47C8CF139CE /* Pods-ANShareViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,11 +52,14 @@
 		0A26319B145B75FA15BFF6A25E4BAB29 /* Pods-ANShareViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANShareViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		154E1528D6F12B53C170BA76375D17BD /* Pods-ANShareViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANShareViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C59F6792B9E816A110BF9FCDB6E160C /* ANShareViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ANShareViewController.modulemap; sourceTree = "<group>"; };
+		2380F2741B8179AD00B4CE01 /* ANShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ANShareViewController.swift; path = "../../../antsquare-ios/Antsquare/Classes/ViewControllers/ShareViewController/ANShareViewController.swift"; sourceTree = "<group>"; };
+		2380F2751B8179AD00B4CE01 /* ANShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ANShareViewController.xib; path = "../../../antsquare-ios/Antsquare/Classes/ViewControllers/ShareViewController/ANShareViewController.xib"; sourceTree = "<group>"; };
+		2380F2761B8179AD00B4CE01 /* ANShareViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ANShareViewModel.swift; path = "../../../antsquare-ios/Antsquare/Classes/ViewControllers/ShareViewController/ANShareViewModel.swift"; sourceTree = "<group>"; };
+		2380F2771B8179AD00B4CE01 /* ANShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ANShareView.swift; path = "../../../antsquare-ios/Antsquare/Classes/ViewControllers/ShareViewController/ANShareView.swift"; sourceTree = "<group>"; };
 		2560D9E9E6231C39ECA401E22A48FA3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		26B036752CB5BFA0EE1D33917CFCD18B /* Pods-ANShareViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANShareViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3BE4A543E230DD9875C8224B30E53DE2 /* Pods-ANShareViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANShareViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3DA2BCA90F5B2887B29F0BBD8D19748F /* Pods-ANShareViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANShareViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		55D52500D0EDF42DBCD620E49830E990 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		5E97B9372A82CCE53AAD68DFE0F95DFE /* Pods-ANShareViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ANShareViewController_Example.modulemap"; sourceTree = "<group>"; };
 		6536A1467C009D1E183EA936956D9967 /* ANShareViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ANShareViewController-Private.xcconfig"; sourceTree = "<group>"; };
 		6B1D53023DF80258B4ACAE4596964589 /* Pods-ANShareViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANShareViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -153,7 +159,10 @@
 		79379F3F1F170CEEB9734D6BA6DBA377 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				55D52500D0EDF42DBCD620E49830E990 /* ReplaceMe.swift */,
+				2380F2741B8179AD00B4CE01 /* ANShareViewController.swift */,
+				2380F2751B8179AD00B4CE01 /* ANShareViewController.xib */,
+				2380F2761B8179AD00B4CE01 /* ANShareViewModel.swift */,
+				2380F2771B8179AD00B4CE01 /* ANShareView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -392,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224DFCD8A3CAAB6054EC2AD2E46096D6 /* ANShareViewController.bundle in Resources */,
+				2380F2791B8179AD00B4CE01 /* ANShareViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +413,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				995CB1A95B33BB3054A639D76056DB76 /* ANShareViewController-dummy.m in Sources */,
-				8670B71E194CE23F0AF22EF4767BF9ED /* ReplaceMe.swift in Sources */,
+				2380F27B1B8179AD00B4CE01 /* ANShareView.swift in Sources */,
+				2380F2781B8179AD00B4CE01 /* ANShareViewController.swift in Sources */,
+				2380F27A1B8179AD00B4CE01 /* ANShareViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
