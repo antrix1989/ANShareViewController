@@ -1,0 +1,25 @@
+{
+  "name": "ANShareViewController",
+  "version": "0.1.0",
+  "summary": "A short description of ANShareViewController.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ANShareViewController",
+  "license": "MIT",
+  "authors": {
+    "Sergey Demchenko": "antrix1989@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ANShareViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ANShareViewController": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

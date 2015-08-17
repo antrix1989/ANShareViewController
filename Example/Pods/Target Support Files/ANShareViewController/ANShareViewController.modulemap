@@ -1,0 +1,6 @@
+framework module ANShareViewController {
+  umbrella header "ANShareViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

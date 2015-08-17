@@ -1,0 +1,6 @@
+framework module Pods_ANShareViewController_Example {
+  umbrella header "Pods-ANShareViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

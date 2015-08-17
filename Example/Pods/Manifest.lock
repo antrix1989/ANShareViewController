@@ -1,0 +1,14 @@
+PODS:
+  - ANShareViewController (0.1.0)
+
+DEPENDENCIES:
+  - ANShareViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ANShareViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ANShareViewController: 5d2173babf8421084e4081c3537d59999371f1f1
+
+COCOAPODS: 0.38.2
